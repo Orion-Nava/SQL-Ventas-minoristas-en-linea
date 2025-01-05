@@ -14,3 +14,5 @@ Este conjunto de datos de venta minorista en línea II contiene todas las transa
 * Country: Nombre del país. Nominal. El nombre del país donde reside un cliente.
 
 El objetivo es practicar la importación de datos en MySQL Workbench y realizar consultas básicas. Usaremos solo las transacciones de 2009 y 2010, que resultan ser un total de 525 461.
+
+Ver conjunto de datos en: https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset?utm_source
