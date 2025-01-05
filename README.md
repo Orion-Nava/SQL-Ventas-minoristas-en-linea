@@ -12,3 +12,5 @@ Este conjunto de datos de venta minorista en línea II contiene todas las transa
 * UnitPrice: Precio unitario. Numérico. Precio del producto por unidad en libras esterlinas (£).
 * CustomerID: Número de cliente. Nominal. Un número entero de 5 dígitos asignado de forma única a cada cliente.
 * Country: Nombre del país. Nominal. El nombre del país donde reside un cliente.
+
+El objetivo es practicar la importación de datos en MySQL Workbench y realizar consultas básicas. Usaremos solo las transacciones de 2009 y 2010, que resultan ser un total de 525 461.
