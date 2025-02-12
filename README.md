@@ -1,5 +1,5 @@
 # SQL-Ventas-minoristas-en-linea
-Práctica MySQL nivel principiante, usando datos de ventas minoristas en línea (Online retail dataset, en Kaggle).
+Práctica de consultas MySQL nivel principiante, usando datos de ventas minoristas en línea (Online retail dataset, en Kaggle).
 
 ## Sobre el conjunto de datos
 Este conjunto de datos de venta minorista en línea II contiene todas las transacciones que se produjeron en una tienda minorista en línea registrada y con sede en el Reino Unido, sin establecimientos físicos, entre el 1 de diciembre de 2009 y el 9 de diciembre de 2011. La empresa vende principalmente artículos de regalo exclusivos para cualquier ocasión. Muchos de los clientes de la empresa son mayoristas.
