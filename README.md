@@ -1,18 +1,57 @@
-# SQL-Ventas-minoristas-en-linea
-Práctica de consultas MySQL nivel principiante, usando datos de ventas minoristas en línea (Online retail dataset, en Kaggle).
+# SQL - Análisis de Ventas Minoristas en Línea
 
-## Sobre el conjunto de datos
-Este conjunto de datos de venta minorista en línea II contiene todas las transacciones que se produjeron en una tienda minorista en línea registrada y con sede en el Reino Unido, sin establecimientos físicos, entre el 1 de diciembre de 2009 y el 9 de diciembre de 2011. La empresa vende principalmente artículos de regalo exclusivos para cualquier ocasión. Muchos de los clientes de la empresa son mayoristas.
-     El conjunto de datos contiene las siguientes variables:
-* InvoiceNo: Número de factura. Nominal. Un número entero de 6 dígitos asignado de forma única a cada transacción. Si este código comienza con la letra 'c', indica una cancelación.
-* StockCode: Código de producto (artículo). Nominal. Un número entero de 5 dígitos asignado de forma única a cada producto distinto.
-* Descripción: Nombre del producto (artículo). Nominal.
-* Quantity: Las cantidades de cada producto (artículo) por transacción. Numérico.
-* InvoiceDate: Fecha y hora de la factura. Numérico. El día y la hora en que se generó una transacción.
-* UnitPrice: Precio unitario. Numérico. Precio del producto por unidad en libras esterlinas (£).
-* CustomerID: Número de cliente. Nominal. Un número entero de 5 dígitos asignado de forma única a cada cliente.
-* Country: Nombre del país. Nominal. El nombre del país donde reside un cliente.
+Este proyecto implementa consultas en SQL para analizar datos transaccionales de una tienda minorista en línea, utilizando el conjunto de datos *Online Retail* disponible en Kaggle. El análisis abarca desde consultas exploratorias y detalladas hasta operaciones más avanzadas como vistas y ranking de productos.
 
-El objetivo es practicar la importación de datos en MySQL Workbench y realizar consultas básicas. Usaremos solo las transacciones de 2009 y 2010, que resultan ser un total de 525 461.
+## Conjunto de datos
 
-Ver conjunto de datos en: https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset?utm_source
+El conjunto de datos contiene todas las transacciones registradas por una tienda minorista en línea con sede en el Reino Unido, entre el 1 de diciembre de 2009 y el 9 de diciembre de 2011. La empresa vende artículos de regalo exclusivos y opera sin tiendas físicas. Muchos de sus clientes son mayoristas.
+
+Variables incluidas:
+
+- `InvoiceNo`: Número de factura. Un identificador único para cada transacción. Las facturas que comienzan con "C" indican cancelaciones.
+- `StockCode`: Código del producto.
+- `Description`: Descripción del producto.
+- `Quantity`: Cantidad de productos por transacción.
+- `InvoiceDate`: Fecha y hora de la transacción.
+- `UnitPrice`: Precio unitario en libras esterlinas (£).
+- `CustomerID`: Identificador del cliente.
+- `Country`: País del cliente.
+
+Fuente: [Online Retail Dataset - Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset)
+
+## Objetivos
+
+- Crear e importar una base de datos relacional en MySQL.
+- Ejecutar consultas para obtener estadísticas clave del negocio.
+- Identificar patrones de compra y comportamiento de clientes.
+- Implementar vistas para facilitar el análisis agregado.
+
+## Contenido del análisis
+
+### I. Creación de base de datos y tablas
+- Creación de la base de datos `OnlineRetail` y de la tabla `Transactions`.
+- Recomendaciones para el preprocesamiento previo a la importación.
+
+### II. Consultas de exploración
+- Cantidad de transacciones por país.
+- Productos más vendidos.
+- Ingresos totales por país.
+- Clientes con más compras.
+
+### III. Consultas detalladas
+- Facturas con productos específicos.
+- Ingresos por mes.
+- Clientes con más de 50 transacciones.
+- Productos no vendidos.
+
+### IV. Consultas avanzadas
+- Ticket promedio por cliente.
+- Transacciones negativas (devoluciones).
+- Ranking de productos por ingresos.
+- Clientes únicos por país.
+
+### V. Vistas
+- Vista para ingresos por país (`CountryRevenue`).
+
+---
+Este proyecto es una muestra funcional del uso de SQL en análisis comercial aplicado a datos reales.
